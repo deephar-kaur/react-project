@@ -1,13 +1,14 @@
 {
+  "homepge": "https://github.com/deephar-kaur/deephar-kaur.github.io"
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "cra-template": "1.2.0",
+  "dependencies":  
+    "cra-template" : , "1.2.0"
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1"
-  },
+  }
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -16,6 +17,9 @@
   },
   "eslintConfig": {
     "extends": [
+   "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+   
       "react-app",
       "react-app/jest"
     ]
